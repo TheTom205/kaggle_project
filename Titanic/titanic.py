@@ -42,7 +42,7 @@ def accuracy(target_,prediction_):
   accur = (point/len(prediction_))*100
   return accur
 
-df = pd.read_csv('train_new.csv', sep=',', names=['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age','SibSp','Parch','Ticket','Fare','Cabin','Embarked'])
+df = pd.read_csv('Titanic/train_new.csv', sep=',', names=['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age','SibSp','Parch','Ticket','Fare','Cabin','Embarked'])
 df_obj = df.select_dtypes(include=['object']).copy()
 
 #df_obj.info()
